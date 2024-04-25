@@ -1022,6 +1022,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Random Lines",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -1065,7 +1066,7 @@
                             "value": "Wait"
                           },
                           "parameters": [
-                            "3.96"
+                            "4.5"
                           ]
                         },
                         {
@@ -1119,7 +1120,7 @@
                             "value": "Wait"
                           },
                           "parameters": [
-                            "4.275"
+                            "4.5"
                           ]
                         },
                         {
@@ -1173,7 +1174,7 @@
                             "value": "Wait"
                           },
                           "parameters": [
-                            "4"
+                            "4.5"
                           ]
                         },
                         {
@@ -1253,12 +1254,31 @@
                         },
                         {
                           "type": {
+                            "value": "SetGlobalVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "ContinuingIntro",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "EcrireFichierTxt"
                           },
                           "parameters": [
                             "\"IntroStuff\"",
                             "\"CompletedIntro\"",
                             "ToString(GlobalVariable(IntroComplete))"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Assistant\"",
+                            ""
                           ]
                         }
                       ]
@@ -1316,12 +1336,31 @@
                         },
                         {
                           "type": {
+                            "value": "SetGlobalVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "ContinuingIntro",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "EcrireFichierTxt"
                           },
                           "parameters": [
                             "\"IntroStuff\"",
                             "\"CompletedIntro\"",
                             "ToString(GlobalVariable(IntroComplete))"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Assistant\"",
+                            ""
                           ]
                         }
                       ]
@@ -1559,7 +1598,7 @@
                         "Kinito",
                         "Animation",
                         "=",
-                        "\"Kinito\""
+                        "\"PoofKinito\""
                       ]
                     },
                     {

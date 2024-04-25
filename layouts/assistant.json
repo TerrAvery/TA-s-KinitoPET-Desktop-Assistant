@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 2.6843774609658007,
+    "zoomFactor": 1.6873329112133142,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -26,13 +26,14 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 200,
       "keepRatio": true,
       "layer": "",
       "name": "Kinito",
       "persistentUuid": "1bbc8b6a-0e83-47fb-be2b-68b33e48bd62",
-      "width": 0,
+      "width": 200,
       "x": 0,
       "y": 35,
       "zOrder": 0,
@@ -95,6 +96,71 @@
         "characterSize": 8,
         "color": "0;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Hand",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hand.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 23
+                      },
+                      {
+                        "x": 0,
+                        "y": 23
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -102,6 +168,9 @@
     "children": [
       {
         "objectName": "KinitoDialogue"
+      },
+      {
+        "objectName": "Hand"
       }
     ]
   },
@@ -111,6 +180,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Scare tactic",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -191,6 +261,40 @@
           "comment": "Add to a value"
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "7"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "ScareTactic.ChanceToRun",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -383,6 +487,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Changing animations",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -432,7 +537,7 @@
                 "Kinito",
                 "Animation",
                 "=",
-                "\"Kinito\""
+                "\"PoofKinito\""
               ]
             }
           ]
@@ -561,7 +666,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Centering",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -570,6 +674,18 @@
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "DialogueBubble",
+                    "=",
+                    "Kinito.PointX(\"DialogueBubblePos\")",
+                    "=",
+                    "Kinito.PointY(\"DialogueBubblePos\")"
+                  ]
+                },
                 {
                   "type": {
                     "value": "MettreXY"
@@ -606,72 +722,308 @@
               "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "Scare tactic 1"
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Friendship Analysis Hub",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
                     {
-                      "type": {
-                        "value": "VarGlobal"
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
                       },
-                      "parameters": [
-                        "Kinito.Dialogue",
-                        "=",
-                        "1000"
+                      "comment": "Friendship Analysis Hub"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1000"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "KinitoDialogue",
+                            "Text",
+                            "=",
+                            "\"Hey, while \nwe're at it...\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1001"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "KinitoDialogue",
+                            "Text",
+                            "=",
+                            "\"Why don't we\ngo back to the\nBest Friends\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1002"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "KinitoDialogue",
+                            "Text",
+                            "=",
+                            "\"Analysis Hub\nto catch up on\nwhat we missed?\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1003"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "KinitoDialogue",
+                            "Text",
+                            "=",
+                            "\"Just give me one\nsecond to do\nsomething really \nquickly.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1004"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "KinitoDialogue",
+                            "Text",
+                            "=",
+                            "\"There we go!\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1005"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "KinitoDialogue",
+                            "Text",
+                            "=",
+                            "\"Welcome back to\nKinitoPET's Best\nFriends Analysis\nHub!\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1006"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "KinitoDialogue",
+                            "Text",
+                            "=",
+                            "\"The hub is a\nbit outdated\nand doesn't\nfunction\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1007"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "KinitoDialogue",
+                            "Text",
+                            "=",
+                            "\"properly anymore,\nso I had to\ntinker with it a\nbit.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1008"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "KinitoDialogue",
+                            "Text",
+                            "=",
+                            "\"That means we are\ngoing to do 12 yes\nor no questions on\nthe All About You\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1009"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "KinitoDialogue",
+                            "Text",
+                            "=",
+                            "\"category!\""
+                          ]
+                        }
                       ]
                     }
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "KinitoDialogue",
-                        "Text",
-                        "=",
-                        "\"Hey, guess what?\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "VarGlobal"
-                      },
-                      "parameters": [
-                        "Kinito.Dialogue",
-                        "=",
-                        "1001"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "KinitoDialogue",
-                        "Text",
-                        "=",
-                        "\"Chicken butt.\""
-                      ]
-                    }
-                  ]
+                  "parameters": []
                 }
               ],
               "parameters": []
@@ -794,7 +1146,7 @@
                     "KinitoDialogue",
                     "Text",
                     "=",
-                    "\"Well, hello again!\""
+                    "\"Well hello again!\""
                   ]
                 }
               ]
@@ -1144,6 +1496,18 @@
                   "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Friendship Club"
+                    },
+                    {
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -1170,7 +1534,7 @@
                           },
                           "parameters": [
                             "",
-                            "hey_guess_what.wav",
+                            "hey_while_were.wav",
                             "1",
                             "",
                             "",
@@ -1182,7 +1546,7 @@
                             "value": "Wait"
                           },
                           "parameters": [
-                            "3"
+                            "1.8"
                           ]
                         },
                         {
@@ -1220,11 +1584,93 @@
                       "actions": [
                         {
                           "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "2.5"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1002"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1002"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "4.6"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1003"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1003"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
                             "value": "PlaySoundCanal"
                           },
                           "parameters": [
                             "",
-                            "chicken_butt.wav",
+                            "just_give_me.wav",
                             "1",
                             "",
                             "",
@@ -1236,7 +1682,105 @@
                             "value": "Wait"
                           },
                           "parameters": [
-                            "1.65"
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Hand",
+                            "Kinito.CenterX()",
+                            "Kinito.CenterY()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "Hand",
+                            "=",
+                            "Kinito.ZOrder() - 1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetAngle"
+                          },
+                          "parameters": [
+                            "Hand",
+                            "=",
+                            "165"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                          },
+                          "parameters": [
+                            "Hand",
+                            "Tween",
+                            "\"GoOffScreen\"",
+                            "-200",
+                            "-200",
+                            "\"linear\"",
+                            "1.65",
+                            "yes"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "5.5"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetWindowSize"
+                          },
+                          "parameters": [
+                            "yes",
+                            "640",
+                            "480",
+                            "yes"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "speak.wav",
+                            "1",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "tadah.wav",
+                            "1",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "2"
                           ]
                         },
                         {
@@ -1246,7 +1790,51 @@
                           "parameters": [
                             "Kinito.Dialogue",
                             "=",
-                            "0"
+                            "1004"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1004"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "there_we_go.wav",
+                            "1",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1.5"
                           ]
                         },
                         {
@@ -1254,18 +1842,291 @@
                             "value": "ModVarGlobal"
                           },
                           "parameters": [
-                            "ScareTactic.ChanceToRun",
+                            "Kinito.Dialogue",
                             "=",
-                            "0"
+                            "1005"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1005"
                           ]
                         },
                         {
                           "type": {
-                            "value": "SetGlobalVariableAsBoolean"
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
                           },
                           "parameters": [
-                            "ScareTactic.KinitoIsTalking",
-                            "="
+                            "",
+                            "Hand",
+                            "24",
+                            "-36",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetAngle"
+                          },
+                          "parameters": [
+                            "Hand",
+                            "=",
+                            "180"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Hub",
+                            "8",
+                            "-285",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "Hand",
+                            "=",
+                            "Hub.ZOrder() + 1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "0.65"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                          },
+                          "parameters": [
+                            "Kinito",
+                            "Tween",
+                            "\"Move\"",
+                            "422",
+                            "248",
+                            "\"linear\"",
+                            "3",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "0.5"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                          },
+                          "parameters": [
+                            "Hand",
+                            "Tween",
+                            "\"Hub\"",
+                            "24",
+                            "257",
+                            "\"linear\"",
+                            "2.65",
+                            "no"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                          },
+                          "parameters": [
+                            "Hub",
+                            "Tween",
+                            "\"Hub\"",
+                            "8",
+                            "8",
+                            "\"linear\"",
+                            "2.65",
+                            "no"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "3"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1006"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1006"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "the_hub_is_a_bit.wav",
+                            "1",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "2.5"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1007"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1007"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "4.35"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1008"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1008"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "4.35"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "Kinito.Dialogue",
+                            "=",
+                            "1009"
                           ]
                         }
                       ]
@@ -1623,8 +2484,63 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "value": "GlobalVariableAsBoolean"
+          },
+          "parameters": [
+            "ContinuingIntro",
+            "True"
+          ]
+        },
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
       "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Kinito",
+            "Animation",
+            "=",
+            "\"NormalKinito\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FadeSoundVolume"
+          },
+          "parameters": [
+            "yes",
+            "0",
+            "0",
+            "2"
+          ]
+        },
         {
           "type": {
             "value": "SetWindowSize"
