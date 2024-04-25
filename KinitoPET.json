@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Bootloader",
   "gdVersion": {
     "build": 99,
     "major": 4,
@@ -20,7 +20,7 @@
     "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
-    "name": "KinitoPET",
+    "name": "TA's KinitoPET Desktop Assistant",
     "description": "",
     "author": "",
     "windowWidth": 200,
@@ -29,26 +29,55 @@
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
-    "platformSpecificAssets": {},
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "kinitopet2.png",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": "",
+      "liluo-thumbnail": ""
+    },
     "loadingScreen": {
-      "backgroundColor": 0,
-      "backgroundFadeInDuration": 0.2,
+      "backgroundColor": 16777215,
+      "backgroundFadeInDuration": 0,
       "backgroundImageResourceName": "",
       "gdevelopLogoStyle": "light",
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 0,
-      "minDuration": 1.5,
+      "minDuration": 2,
       "progressBarColor": 16777215,
       "progressBarHeight": 20,
       "progressBarMaxWidth": 200,
       "progressBarMinWidth": 40,
       "progressBarWidthPercent": 30,
       "showGDevelopSplash": true,
-      "showProgressBar": true
+      "showProgressBar": false
     },
     "watermark": {
       "placement": "bottom-left",
-      "showWatermark": true
+      "showWatermark": false
     },
     "authorIds": [],
     "authorUsernames": [],
@@ -64,15 +93,6 @@
   },
   "resources": {
     "resources": [
-      {
-        "alwaysLoaded": false,
-        "file": "egg.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "egg.png",
-        "smoothed": false,
-        "userAdded": true
-      },
       {
         "file": "huh.mp3",
         "kind": "audio",
@@ -130,22 +150,6 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
-        "userAdded": true
-      },
-      {
-        "file": "Tahoma.fnt",
-        "kind": "bitmapFont",
-        "metadata": "",
-        "name": "Tahoma.fnt",
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Tahoma.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tahoma.png",
-        "smoothed": false,
         "userAdded": true
       },
       {
@@ -269,15 +273,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "poof_egg1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "poof_egg1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "poof_egg2.png",
         "kind": "image",
         "metadata": "",
@@ -350,22 +345,6 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
-      },
-      {
-        "file": "SourceCodePro.fnt",
-        "kind": "bitmapFont",
-        "metadata": "",
-        "name": "SourceCodePro.fnt",
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "SourceCodePro.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "SourceCodePro.png",
-        "smoothed": false,
-        "userAdded": false
       },
       {
         "file": "SourceCodePro-Italic.ttf",
@@ -1066,6 +1045,35 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "hey_guess_what.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "hey_guess_what.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "chicken_butt.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "chicken_butt.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinitopet2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinitopet2.png",
+        "smoothed": false,
         "userAdded": true
       }
     ],
@@ -4209,6 +4217,34 @@
     {
       "folded": true,
       "name": "ContinuingIntro",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "ScareTactic",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "ChanceToRun",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Dice",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "KinitoIsTalking",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "ScareTacticEnabled",
       "type": "boolean",
       "value": false
     }

@@ -1,13 +1,13 @@
 {
-  "b": 209,
+  "b": 255,
   "disableInputWhenNotFocused": true,
   "mangledName": "Bootloader",
   "name": "Bootloader",
-  "r": 209,
+  "r": 0,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
-  "title": "",
-  "v": 209,
+  "title": "kinitopet.exe",
+  "v": 255,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 3.5,
+    "zoomFactor": 2.7748955550095182,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -40,8 +40,8 @@
       "name": "NewText",
       "persistentUuid": "c541ee9e-694a-4a35-8fdc-6b6f38156290",
       "width": 0,
-      "x": 55,
-      "y": 51,
+      "x": -149,
+      "y": 30,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -100,6 +100,51 @@
     ]
   },
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetWindowSize"
+          },
+          "parameters": [
+            "yes",
+            "200",
+            "200",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AdvancedWindow::SetAlwaysOnTop"
+          },
+          "parameters": [
+            "yes",
+            "\"screen-saver\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AdvancedWindow::SetClosable"
+          },
+          "parameters": [
+            "yes",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AdvancedWindow::SetFullScreenable"
+          },
+          "parameters": [
+            "no",
+            "\"screen-saver\""
+          ]
+        }
+      ]
+    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
