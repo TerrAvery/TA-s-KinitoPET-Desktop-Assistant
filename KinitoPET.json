@@ -1,0 +1,4243 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": true,
+    "projectUuid": "90d3bf38-c652-462d-9161-3324c4b28e8f",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "",
+    "templateSlug": "",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "KinitoPET",
+    "description": "",
+    "author": "",
+    "windowWidth": 200,
+    "windowHeight": 200,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "egg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "egg.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "huh.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "huh.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "hey_whos_there.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "hey_whos_there.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "DialogueBubble.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DialogueBubble.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "talk.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "talk.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "period.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "period.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "land.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "land.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Tahoma.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "Tahoma.fnt",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Tahoma.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tahoma.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "escape_egg1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "escape_egg1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "escape_egg2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "escape_egg2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "escape_egg3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "escape_egg3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "escape_egg4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "escape_egg4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "escape_egg5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "escape_egg5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "escape_egg6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "escape_egg6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "escape_egg7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "escape_egg7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "escape_egg8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "escape_egg8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "escape_egg9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "escape_egg9.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "escape_egg10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "escape_egg10.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "escape_egg11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "escape_egg11.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "oh_hello_there.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "oh_hello_there.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "thankyou.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "thankyou.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "poof_egg1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof_egg1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "poof_egg2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof_egg2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "poof_egg3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof_egg3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "poof_egg4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof_egg4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "poof_egg5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof_egg5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "poof_egg6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof_egg6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "poof.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "poof.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "mu_intro.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "mu_intro.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "im_kinitopet.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "im_kinitopet.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "SourceCodePro.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "SourceCodePro.fnt",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "SourceCodePro.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "SourceCodePro.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "SourceCodePro-Italic.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "SourceCodePro-Italic.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "type.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "speak.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "slide.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "slide.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "hmm_this_all_feels.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "hmm_this_all_feels.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "you_look_a_lot_like.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "you_look_a_lot_like.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "did_we_meet_before.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "did_we_meet_before.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "i_remember_you.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "i_remember_you.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "you_were_my_best_friend.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "you_were_my_best_friend.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard11.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard12.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard13.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard14.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard15.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard16.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard17.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard18.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard19.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard20.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard21.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard22.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard22.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard23.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard23.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard24.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard24.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard25.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard25.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard26.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard26.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard27.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard27.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard28.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard28.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard29.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard30.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard30.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard31.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard31.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard32.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard32.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard33.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard33.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard34.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard34.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard35.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard35.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard36.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard37.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard37.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard38.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard38.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard39.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard39.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard40.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard41.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard41.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard42.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard42.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard43.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard43.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard44.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard44.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard45.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard45.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard46.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard46.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard47.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard47.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard48.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard48.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard49.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard49.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard50.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard51.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard51.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard52.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard52.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard53.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard53.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard54.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard54.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard55.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard55.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard56.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard56.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard57.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard57.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard58.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard58.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard59.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard59.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard60.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard60.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard61.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard61.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard62.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard62.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard63.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard63.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard64.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard64.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard65.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard65.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard66.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard66.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard67.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard67.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard68.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard68.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard69.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard69.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard70.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard70.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard71.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard71.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard72.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard73.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard73.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard74.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard74.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard75.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard75.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_surfboard76.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_surfboard76.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "welcome_back.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "welcome_back.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "hello_again.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "hello_again.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "well_hello_again.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "well_hello_again.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Kinito",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Egg",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "escape_egg11.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "EscapeEgg",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "escape_egg1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "escape_egg2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "escape_egg3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "escape_egg4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "escape_egg5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "escape_egg6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "escape_egg7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "escape_egg8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "escape_egg9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "escape_egg10.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kinito",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof_egg2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof_egg3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof_egg4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof_egg5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof_egg6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SurfboardIntro",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.03125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard11.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard12.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard13.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard14.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard15.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard16.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard17.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard18.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard19.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard20.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard21.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard22.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard23.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard24.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard25.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard26.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard27.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard28.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard29.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard30.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard31.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard32.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard33.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard34.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard35.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard36.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard37.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard38.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard39.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard40.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard41.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard42.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard43.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard44.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard45.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard46.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard47.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard48.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard49.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard50.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard51.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard52.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard53.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard54.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard55.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard56.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard57.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard58.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard59.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard60.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard61.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard62.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard63.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard64.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard65.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard66.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard67.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard68.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard69.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard70.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard71.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard72.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard73.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard74.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard75.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_surfboard76.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "DialogueBubble",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "DialogueBubble.png",
+                  "points": [
+                    {
+                      "name": "Text",
+                      "x": 12.5,
+                      "y": 19.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 50,
+                    "y": 75
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 13.5,
+                    "y": 17.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 10
+                      },
+                      {
+                        "x": 97,
+                        "y": 10
+                      },
+                      {
+                        "x": 97,
+                        "y": 76
+                      },
+                      {
+                        "x": 5,
+                        "y": 76
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "folderName": "Dialogue",
+        "children": [
+          {
+            "objectName": "DialogueBubble"
+          }
+        ]
+      },
+      {
+        "folderName": "Kinito",
+        "children": [
+          {
+            "objectName": "Kinito"
+          }
+        ]
+      }
+    ]
+  },
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "Kinito",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Dialogue",
+          "type": "structure",
+          "children": []
+        },
+        {
+          "name": "Intro",
+          "type": "boolean",
+          "value": true
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "IntroComplete",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "folded": true,
+      "name": "ContinuingIntro",
+      "type": "boolean",
+      "value": false
+    }
+  ],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/bootloader"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/intro"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/assistant"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/autotyping"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/texttospeech"
+    }
+  ],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
