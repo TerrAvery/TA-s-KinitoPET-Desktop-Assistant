@@ -1301,6 +1301,36 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "file": "joke_intro_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "joke_intro_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "joke_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "joke_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "joke_intro_3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "joke_intro_3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -5289,6 +5319,12 @@
           "name": "Intro",
           "type": "boolean",
           "value": true
+        },
+        {
+          "folded": true,
+          "name": "JokeProbability",
+          "type": "number",
+          "value": 0
         }
       ]
     },
