@@ -3806,6 +3806,18 @@
           "actions": [
             {
               "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "poof.wav",
+                "1",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "PauseObjectTimer"
               },
               "parameters": [
@@ -3847,18 +3859,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "poof.wav",
-                "1",
-                "",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
