@@ -1022,7 +1022,6 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "Random Lines",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -1066,7 +1065,7 @@
                             "value": "Wait"
                           },
                           "parameters": [
-                            "4.5"
+                            "6.75"
                           ]
                         },
                         {
@@ -1120,7 +1119,7 @@
                             "value": "Wait"
                           },
                           "parameters": [
-                            "4.5"
+                            "6.75"
                           ]
                         },
                         {
@@ -1174,7 +1173,7 @@
                             "value": "Wait"
                           },
                           "parameters": [
-                            "4.5"
+                            "6.75"
                           ]
                         },
                         {
@@ -1784,7 +1783,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Click Kinito on Intro",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1792,6 +1790,16 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "WindowTransparency",
+                "=",
+                "100"
+              ]
+            },
             {
               "type": {
                 "value": "VarGlobal"
@@ -1919,6 +1927,59 @@
       "actions": [
         {
           "type": {
+            "value": "AdvancedWindow::SetClosable"
+          },
+          "parameters": [
+            "yes",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AdvancedWindow::SetMinimizable"
+          },
+          "parameters": [
+            "no",
+            "\"screen-saver\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AdvancedWindow::SetFullScreenable"
+          },
+          "parameters": [
+            "no",
+            "\"screen-saver\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AdvancedWindow::SetMaximizable"
+          },
+          "parameters": [
+            "no",
+            "\"screen-saver\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::EnableEffect"
+          },
+          "parameters": [
+            "Kinito",
+            "Effect",
+            "\"Anger\"",
+            "no"
+          ]
+        },
+        {
+          "type": {
             "value": "SetWindowSize"
           },
           "parameters": [
@@ -1940,20 +2001,48 @@
         },
         {
           "type": {
-            "value": "AdvancedWindow::SetClosable"
+            "value": "AdvancedWindow::SetOpacity"
           },
           "parameters": [
-            "yes",
+            "GlobalVariable(WindowTransparency)",
             ""
           ]
         },
         {
           "type": {
-            "value": "AdvancedWindow::SetFullScreenable"
+            "value": "ModVarGlobal"
           },
           "parameters": [
-            "no",
-            "\"screen-saver\""
+            "WindowTransparency",
+            "+",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "WindowTransparency",
+            ">=",
+            "100"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "WindowTransparency",
+            "=",
+            "100"
           ]
         }
       ]
