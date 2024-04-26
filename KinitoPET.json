@@ -1143,6 +1143,36 @@
         "name": "friendship_hub_window.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "nice_apps.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "nice_apps.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "keep_it_up.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "keep_it_up.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "youre_doing.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "youre_doing.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
