@@ -1291,6 +1291,36 @@
         "name": "cmd.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "good_morning.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "good_morning.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "well_good_morning.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "well_good_morning.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "good_morning_solo.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "good_morning_solo.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -5349,6 +5379,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/timedetector"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/autotyping"

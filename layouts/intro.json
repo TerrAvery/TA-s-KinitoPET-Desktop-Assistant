@@ -267,6 +267,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Intro",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -1013,6 +1014,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Intro",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -1022,6 +1024,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Random Lines",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -1065,7 +1068,7 @@
                             "value": "Wait"
                           },
                           "parameters": [
-                            "6.75"
+                            "5.75"
                           ]
                         },
                         {
@@ -1119,7 +1122,7 @@
                             "value": "Wait"
                           },
                           "parameters": [
-                            "6.75"
+                            "5.75"
                           ]
                         },
                         {
@@ -1173,7 +1176,7 @@
                             "value": "Wait"
                           },
                           "parameters": [
-                            "6.75"
+                            "5.75"
                           ]
                         },
                         {
@@ -1239,7 +1242,7 @@
                             "value": "Wait"
                           },
                           "parameters": [
-                            "4"
+                            "5"
                           ]
                         },
                         {
@@ -1268,6 +1271,14 @@
                             "\"IntroStuff\"",
                             "\"CompletedIntro\"",
                             "ToString(GlobalVariable(IntroComplete))"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1"
                           ]
                         },
                         {
@@ -1321,7 +1332,7 @@
                             "value": "Wait"
                           },
                           "parameters": [
-                            "4"
+                            "5"
                           ]
                         },
                         {
@@ -1350,6 +1361,14 @@
                             "\"IntroStuff\"",
                             "\"CompletedIntro\"",
                             "ToString(GlobalVariable(IntroComplete))"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1"
                           ]
                         },
                         {
