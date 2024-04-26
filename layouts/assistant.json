@@ -711,6 +711,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Dialogue Strings",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1335,7 +1336,8 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "name": "Morning",
+              "folded": true,
+              "name": "Morning/Dawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -1363,11 +1365,28 @@
                     },
                     {
                       "type": {
-                        "value": "TimeDetector::Morning"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "",
-                        ""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "TimeDetector::Morning"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TimeDetector::Dawn"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ],
@@ -1409,11 +1428,28 @@
                     },
                     {
                       "type": {
-                        "value": "TimeDetector::Morning"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "",
-                        ""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "TimeDetector::Morning"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TimeDetector::Dawn"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ],
@@ -1455,11 +1491,28 @@
                     },
                     {
                       "type": {
-                        "value": "TimeDetector::Morning"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "",
-                        ""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "TimeDetector::Morning"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TimeDetector::Dawn"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ],
@@ -1485,7 +1538,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "name": "Dusk",
+              "name": "Dusk/Night",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -1513,11 +1566,28 @@
                     },
                     {
                       "type": {
-                        "value": "TimeDetector::Dusk"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "",
-                        ""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "TimeDetector::Dusk"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TimeDetector::Night"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ],
@@ -1530,7 +1600,7 @@
                         "KinitoDialogue",
                         "Text",
                         "=",
-                        "\"Good morning!\nWelcome back!\""
+                        "\"Good evening!\nWelcome back!\""
                       ]
                     }
                   ]
@@ -1559,11 +1629,28 @@
                     },
                     {
                       "type": {
-                        "value": "TimeDetector::Dusk"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "",
-                        ""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "TimeDetector::Dusk"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TimeDetector::Night"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ],
@@ -1576,7 +1663,7 @@
                         "KinitoDialogue",
                         "Text",
                         "=",
-                        "\"Good morning!\""
+                        "\"Good evening!\""
                       ]
                     }
                   ]
@@ -1605,11 +1692,28 @@
                     },
                     {
                       "type": {
-                        "value": "TimeDetector::Dusk"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "",
-                        ""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "TimeDetector::Dusk"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TimeDetector::Night"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ],
@@ -1622,7 +1726,7 @@
                         "KinitoDialogue",
                         "Text",
                         "=",
-                        "\"Well, good\nmorning!\""
+                        "\"Well, good\nevening!\""
                       ]
                     }
                   ]
@@ -2755,6 +2859,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Scare Tactics",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3667,6 +3772,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Booted up again (skipped intro)",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3965,26 +4071,6 @@
                         },
                         {
                           "type": {
-                            "inverted": true,
-                            "value": "TimeDetector::October"
-                          },
-                          "parameters": [
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "TimeDetector::December"
-                          },
-                          "parameters": [
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "BuiltinCommonInstructions::Once"
                           },
                           "parameters": []
@@ -4067,26 +4153,6 @@
                               ]
                             }
                           ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "TimeDetector::October"
-                          },
-                          "parameters": [
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "TimeDetector::December"
-                          },
-                          "parameters": [
-                            "",
-                            ""
-                          ]
                         }
                       ],
                       "actions": [
@@ -4166,26 +4232,6 @@
                               ]
                             }
                           ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "TimeDetector::October"
-                          },
-                          "parameters": [
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "TimeDetector::December"
-                          },
-                          "parameters": [
-                            "",
-                            ""
-                          ]
                         }
                       ],
                       "actions": [
@@ -4220,6 +4266,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Dusk / Night",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -4274,26 +4321,6 @@
                         },
                         {
                           "type": {
-                            "inverted": true,
-                            "value": "TimeDetector::October"
-                          },
-                          "parameters": [
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "TimeDetector::December"
-                          },
-                          "parameters": [
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "BuiltinCommonInstructions::Once"
                           },
                           "parameters": []
@@ -4314,7 +4341,7 @@
                           },
                           "parameters": [
                             "",
-                            "good_morning.wav",
+                            "good_evening.wav",
                             "1",
                             "",
                             "",
@@ -4376,26 +4403,6 @@
                               ]
                             }
                           ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "TimeDetector::October"
-                          },
-                          "parameters": [
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "TimeDetector::December"
-                          },
-                          "parameters": [
-                            "",
-                            ""
-                          ]
                         }
                       ],
                       "actions": [
@@ -4413,7 +4420,7 @@
                           },
                           "parameters": [
                             "",
-                            "good_morning_solo.wav",
+                            "good_evening_solo.wav",
                             "1",
                             "",
                             "",
@@ -4475,26 +4482,6 @@
                               ]
                             }
                           ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "TimeDetector::October"
-                          },
-                          "parameters": [
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "TimeDetector::December"
-                          },
-                          "parameters": [
-                            "",
-                            ""
-                          ]
                         }
                       ],
                       "actions": [
@@ -4512,7 +4499,7 @@
                           },
                           "parameters": [
                             "",
-                            "well_good_morning.wav",
+                            "well_good_evening.wav",
                             "1",
                             "",
                             "",
@@ -4572,6 +4559,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Idle Animations",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",

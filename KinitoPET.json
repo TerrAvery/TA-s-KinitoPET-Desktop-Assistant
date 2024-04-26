@@ -1018,56 +1018,6 @@
         "userAdded": true
       },
       {
-        "file": "welcome_back.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "welcome_back.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "hello_again.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "hello_again.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": true
-      },
-      {
-        "file": "well_hello_again.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "well_hello_again.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": true
-      },
-      {
-        "file": "hey_guess_what.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "hey_guess_what.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": true
-      },
-      {
-        "file": "chicken_butt.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "chicken_butt.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": true
-      },
-      {
         "alwaysLoaded": false,
         "file": "kinitopet2.png",
         "kind": "image",
@@ -1317,6 +1267,36 @@
         "kind": "audio",
         "metadata": "",
         "name": "good_morning_solo.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "good_evening.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "good_evening.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "good_evening_solo.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "good_evening_solo.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "well_good_evening.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "well_good_evening.wav",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
