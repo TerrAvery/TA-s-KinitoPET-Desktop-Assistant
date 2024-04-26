@@ -1173,6 +1173,71 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_sleep1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_sleep1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_sleep2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_sleep2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_sleep3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_sleep3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_sleep4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_sleep4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_sleep5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_sleep5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "hey_not_nice.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "hey_not_nice.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "why_are_you_doing_that.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "why_are_you_doing_that.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1185,7 +1250,24 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Adjustment",
+          "name": "Anger",
+          "doubleParameters": {
+            "alpha": 1,
+            "blue": 1,
+            "brightness": 1,
+            "contrast": 3,
+            "gamma": 1,
+            "green": 1,
+            "red": 1,
+            "saturation": 1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "name": "Tween",
@@ -4696,6 +4778,228 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "poof_egg6.png",
+                  "points": [
+                    {
+                      "name": "DialogueBubblePos",
+                      "x": 100,
+                      "y": 36
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sleep",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_sleep1.png",
+                  "points": [
+                    {
+                      "name": "DialogueBubblePos",
+                      "x": 100,
+                      "y": 36
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_sleep2.png",
+                  "points": [
+                    {
+                      "name": "DialogueBubblePos",
+                      "x": 100,
+                      "y": 36
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_sleep3.png",
+                  "points": [
+                    {
+                      "name": "DialogueBubblePos",
+                      "x": 100,
+                      "y": 36
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_sleep4.png",
+                  "points": [
+                    {
+                      "name": "DialogueBubblePos",
+                      "x": 100,
+                      "y": 36
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 75,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 81
+                      },
+                      {
+                        "x": 131,
+                        "y": 152
+                      },
+                      {
+                        "x": 75,
+                        "y": 152
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_sleep5.png",
                   "points": [
                     {
                       "name": "DialogueBubblePos",
