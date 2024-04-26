@@ -1238,6 +1238,36 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "file": "hey_i_was_having.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "hey_i_was_having.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "hey_i_was_just_about.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "hey_i_was_just_about.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "hey_i_wanted_to.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "hey_i_wanted_to.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

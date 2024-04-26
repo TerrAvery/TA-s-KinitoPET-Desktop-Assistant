@@ -525,6 +525,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Typing",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -566,6 +567,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Spawning",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -632,6 +634,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Centering",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -674,6 +677,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Dialogue Strings",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -683,6 +687,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Random idle dialogue",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -766,7 +771,7 @@
                         "KinitoDialogue",
                         "Text",
                         "=",
-                        "\"You're doing \ngreat, keep it up!\""
+                        "\"You're doing \ngreat, keep it\nup!\""
                       ]
                     }
                   ]
@@ -817,6 +822,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Friendship Analysis Hub",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -1164,6 +1170,117 @@
                     "Text",
                     "=",
                     "\"Hey! Not nice!\nI was having a \ngood rest!\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ContinuingIntro",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Kinito.Dialogue",
+                    "=",
+                    "0.6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "KinitoDialogue",
+                    "Text",
+                    "=",
+                    "\"Hey! I was \nhaving a good \nrest!\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ContinuingIntro",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Kinito.Dialogue",
+                    "=",
+                    "0.7"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "KinitoDialogue",
+                    "Text",
+                    "=",
+                    "\"Hey! I was just\nabout to doze\noff!\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ContinuingIntro",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Kinito.Dialogue",
+                    "=",
+                    "0.8"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "KinitoDialogue",
+                    "Text",
+                    "=",
+                    "\"Hey! I wanted to\ntake a quick nap!\""
                   ]
                 }
               ]
@@ -1622,6 +1739,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Wakeup Voice",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -1688,6 +1806,195 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Kinito.Dialogue",
+                        "=",
+                        "0.6"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "hey_i_was_having.wav",
+                        "1",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Kinito",
+                        "\"IdleTimer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "Kinito.Dialogue",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Kinito.Dialogue",
+                        "=",
+                        "0.7"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "hey_i_was_just_about.wav",
+                        "1",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Kinito",
+                        "\"IdleTimer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "Kinito.Dialogue",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Kinito.Dialogue",
+                        "=",
+                        "0.8"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "hey_i_wanted_to.wav",
+                        "1",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Kinito",
+                        "\"IdleTimer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "Kinito.Dialogue",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
                 }
               ],
               "parameters": []
@@ -1718,58 +2025,6 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::Not"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "Kinito",
-                            "Animation",
-                            "=",
-                            "\"PoofKinito\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "Kinito",
-                            "Animation",
-                            "=",
-                            "\"NormalKinito\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "RemoveObjectTimer"
-                      },
-                      "parameters": [
-                        "Kinito",
-                        "\"IdleTimer\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
                         "value": "BuiltinCommonInstructions::Or"
                       },
                       "parameters": [],
@@ -1808,10 +2063,11 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Wait"
+                        "value": "ResetObjectTimer"
                       },
                       "parameters": [
-                        "1"
+                        "Kinito",
+                        "\"IdleTimer\""
                       ]
                     },
                     {
@@ -1820,7 +2076,7 @@
                       },
                       "parameters": [
                         "Kinito",
-                        "\"IdleTimer\""
+                        "\"RandomAnimation\""
                       ]
                     }
                   ]
@@ -1828,6 +2084,16 @@
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ObjectTimerPaused"
+                      },
+                      "parameters": [
+                        "Kinito",
+                        "\"IdleTimer\""
+                      ]
+                    },
                     {
                       "type": {
                         "value": "BuiltinCommonInstructions::Or"
@@ -1866,7 +2132,7 @@
                         "Kinito",
                         "\"IdleTimer\"",
                         ">=",
-                        "120"
+                        "RandomInRange(30,49)"
                       ]
                     },
                     {
@@ -1886,6 +2152,101 @@
                         "=",
                         "RandomInRange(4,6)"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Kinito",
+                        "\"IdleTimer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.01"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PauseObjectTimer"
+                      },
+                      "parameters": [
+                        "Kinito",
+                        "\"IdleTimer\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SoundPlaying"
+                      },
+                      "parameters": [
+                        "",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PauseObjectTimer"
+                      },
+                      "parameters": [
+                        "Kinito",
+                        "\"IdleTimer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PauseObjectTimer"
+                      },
+                      "parameters": [
+                        "Kinito",
+                        "\"RandomAnimation\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SoundPlaying"
+                      },
+                      "parameters": [
+                        "",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "UnPauseObjectTimer"
+                      },
+                      "parameters": [
+                        "Kinito",
+                        "\"IdleTimer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "UnPauseObjectTimer"
+                      },
+                      "parameters": [
+                        "Kinito",
+                        "\"RandomAnimation\""
+                      ]
                     }
                   ]
                 },
@@ -1921,33 +2282,25 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "CompareObjectTimer"
-                      },
-                      "parameters": [
-                        "Kinito",
-                        "\"IdleTimer\"",
-                        ">=",
-                        "120"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "ResetObjectTimer"
+                        "value": "PauseObjectTimer"
                       },
                       "parameters": [
                         "Kinito",
                         "\"IdleTimer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PauseObjectTimer"
+                      },
+                      "parameters": [
+                        "Kinito",
+                        "\"RandomAnimation\""
                       ]
                     }
                   ]
@@ -2179,6 +2532,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Scare Tactics",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -2837,6 +3191,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Scare Tactic 2",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -2862,51 +3217,8 @@
                           },
                           "parameters": [
                             "Kinito.Dialogue",
-                            ">=",
-                            "0.6"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "VarGlobal"
-                          },
-                          "parameters": [
-                            "Kinito.Dialogue",
-                            "<",
-                            "0.999"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "ModVarGlobal"
-                          },
-                          "parameters": [
-                            "Kinito.Dialogue",
                             "=",
-                            "0.5"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "VarGlobal"
-                          },
-                          "parameters": [
-                            "Kinito.Dialogue",
-                            "=",
-                            "0.999"
+                            "0.9"
                           ]
                         },
                         {
@@ -2954,7 +3266,7 @@
                           "parameters": [
                             "Kinito.Dialogue",
                             "=",
-                            "0.999"
+                            "0.9"
                           ]
                         },
                         {
@@ -3057,7 +3369,7 @@
                           "parameters": [
                             "Kinito.Dialogue",
                             "=",
-                            "0.999"
+                            "0.9"
                           ]
                         }
                       ],
@@ -3132,6 +3444,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Booted up again (skipped intro)",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3343,83 +3656,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
-      "name": "Click Kinito on Intro",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Kinito.Dialogue",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::Name"
-              },
-              "parameters": [
-                "Kinito",
-                "Animation",
-                "=",
-                "\"Egg\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "Kinito",
-                "",
-                "yes",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "MouseButtonPressed"
-              },
-              "parameters": [
-                "Kinito",
-                "Left"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "Kinito.Dialogue",
-                "=",
-                "1"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
       "name": "Idle Animations",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3429,6 +3665,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Idle Animation Detail",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3513,90 +3750,13 @@
                   "parameters": [
                     "Kinito.Dialogue",
                     "=",
-                    "RandomFloatInRange(0.5,0.999)"
+                    "RandomWithStep(0.5,0.9,0.1)"
                   ]
                 }
               ]
             }
           ],
           "parameters": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SoundPlaying"
-              },
-              "parameters": [
-                "",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Kinito",
-                "\"RandomAnimation\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::Name"
-                  },
-                  "parameters": [
-                    "Kinito",
-                    "Animation",
-                    "=",
-                    "\"PoofKinito\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::Name"
-                  },
-                  "parameters": [
-                    "Kinito",
-                    "Animation",
-                    "=",
-                    "\"NormalKinito\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Kinito",
-                "\"RandomAnimation\""
-              ]
-            }
-          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -3627,13 +3787,56 @@
           "conditions": [
             {
               "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Kinito",
+                "Animation",
+                "=",
+                "\"Sleep\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PauseObjectTimer"
+              },
+              "parameters": [
+                "Kinito",
+                "\"RandomAnimation\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "ObjectTimerPaused"
+              },
+              "parameters": [
+                "Kinito",
+                "\"RandomAnimation\""
+              ]
+            },
+            {
+              "type": {
                 "value": "CompareObjectTimer"
               },
               "parameters": [
                 "Kinito",
                 "\"RandomAnimation\"",
                 ">=",
-                "30"
+                "RandomInRange(50,85)"
               ]
             },
             {
@@ -3766,6 +3969,112 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "AdvancedWindow::SetClosable"
+          },
+          "parameters": [
+            "yes",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AdvancedWindow::SetMinimizable"
+          },
+          "parameters": [
+            "no",
+            "\"screen-saver\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AdvancedWindow::SetFullScreenable"
+          },
+          "parameters": [
+            "no",
+            "\"screen-saver\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AdvancedWindow::SetMaximizable"
+          },
+          "parameters": [
+            "no",
+            "\"screen-saver\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "Kinito.Dialogue",
+            ">=",
+            "1000"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PauseObjectTimer"
+          },
+          "parameters": [
+            "Kinito",
+            "\"IdleTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PauseObjectTimer"
+          },
+          "parameters": [
+            "Kinito",
+            "\"RandomAnimation\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "Kinito.Dialogue",
+            ">=",
+            "1000"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetWindowSize"
+          },
+          "parameters": [
+            "yes",
+            "200",
+            "200",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
@@ -3801,41 +4110,12 @@
         },
         {
           "type": {
-            "value": "SetWindowSize"
-          },
-          "parameters": [
-            "yes",
-            "200",
-            "200",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "AdvancedWindow::SetAlwaysOnTop"
           },
           "parameters": [
             "yes",
             "\"screen-saver\"",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "AdvancedWindow::SetClosable"
-          },
-          "parameters": [
-            "yes",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "AdvancedWindow::SetFullScreenable"
-          },
-          "parameters": [
-            "no",
-            "\"screen-saver\""
           ]
         }
       ]
