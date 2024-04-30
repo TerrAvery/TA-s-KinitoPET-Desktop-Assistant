@@ -1349,6 +1349,36 @@
         "name": "Collision",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "joke_11.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "joke_11.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "joke_12.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "joke_12.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "joke_introduction.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "joke_introduction.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1381,9 +1411,9 @@
       ],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Draggable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         },
         {
           "name": "Tween",
@@ -5422,6 +5452,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/choose"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/timedetector"
