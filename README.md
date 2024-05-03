@@ -16,6 +16,11 @@ Meet Kinito!
 Kinito is a friendly, fun-loving companion who can keep you happy for a while!
 His multitude of great features go hand in hand with his upstanding personality that is sure to keep you entertained! ![imagen](https://github.com/TerrAvery/TA-s-KinitoPET-Desktop-Assistant/assets/148239102/b62b4c71-7780-46bc-8ae5-65e04ef8d759)
 
+With our new top-of-the-line technology, you can now give Kinito a fresh coat of paint, as well as some fancy new hats!
+Now you can make him feel like even more of a personal assistant to you!
+![imagen](https://github.com/TerrAvery/TA-s-KinitoPET-Desktop-Assistant/assets/148239102/1ef31a34-6514-4003-8d1e-dfcdc4a84d67)
+
+
 Kinito has always been the face of  the 1986's Kinito Crew collection and that is why we are delighted to bring our loveable mascot into the digital age!
 So why wait? Add KinitoPET to your machine today!
 
