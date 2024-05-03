@@ -1388,6 +1388,61 @@
         "name": "bliss.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "kinito_customize.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kinito_customize.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "hats/no_hat.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hats\\no_hat.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "hats/hat_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hats\\hat_1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "hats/hat_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hats\\hat_2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "hats/hat_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hats\\hat_3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "splatter.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "splatter.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1416,6 +1471,20 @@
           },
           "stringParameters": {},
           "booleanParameters": {}
+        },
+        {
+          "effectType": "HslAdjustment",
+          "name": "Paint",
+          "doubleParameters": {
+            "alpha": 1,
+            "hue": 0,
+            "lightness": 0,
+            "saturation": 0
+          },
+          "stringParameters": {},
+          "booleanParameters": {
+            "colorize": false
+          }
         }
       ],
       "behaviors": [
@@ -1932,6 +2001,11 @@
                       "name": "DialogueBubblePos",
                       "x": 100,
                       "y": 36
+                    },
+                    {
+                      "name": "Hat",
+                      "x": 101,
+                      "y": 32
                     }
                   ],
                   "originPoint": {
@@ -1974,6 +2048,11 @@
                       "name": "DialogueBubblePos",
                       "x": 100,
                       "y": 36
+                    },
+                    {
+                      "name": "Hat",
+                      "x": 101,
+                      "y": 32
                     }
                   ],
                   "originPoint": {
@@ -2016,6 +2095,11 @@
                       "name": "DialogueBubblePos",
                       "x": 100,
                       "y": 36
+                    },
+                    {
+                      "name": "Hat",
+                      "x": 101,
+                      "y": 32
                     }
                   ],
                   "originPoint": {
@@ -2058,6 +2142,11 @@
                       "name": "DialogueBubblePos",
                       "x": 100,
                       "y": 36
+                    },
+                    {
+                      "name": "Hat",
+                      "x": 101,
+                      "y": 32
                     }
                   ],
                   "originPoint": {
@@ -2100,6 +2189,11 @@
                       "name": "DialogueBubblePos",
                       "x": 100,
                       "y": 36
+                    },
+                    {
+                      "name": "Hat",
+                      "x": 101,
+                      "y": 32
                     }
                   ],
                   "originPoint": {
@@ -4938,6 +5032,11 @@
                       "name": "DialogueBubblePos",
                       "x": 100,
                       "y": 36
+                    },
+                    {
+                      "name": "Hat",
+                      "x": 101,
+                      "y": 32
                     }
                   ],
                   "originPoint": {
@@ -4992,6 +5091,11 @@
                       "name": "DialogueBubblePos",
                       "x": 100,
                       "y": 36
+                    },
+                    {
+                      "name": "Hat",
+                      "x": 88,
+                      "y": 53.5
                     }
                   ],
                   "originPoint": {
@@ -5034,6 +5138,11 @@
                       "name": "DialogueBubblePos",
                       "x": 100,
                       "y": 36
+                    },
+                    {
+                      "name": "Hat",
+                      "x": 88,
+                      "y": 53.5
                     }
                   ],
                   "originPoint": {
@@ -5076,6 +5185,11 @@
                       "name": "DialogueBubblePos",
                       "x": 100,
                       "y": 36
+                    },
+                    {
+                      "name": "Hat",
+                      "x": 88,
+                      "y": 53.5
                     }
                   ],
                   "originPoint": {
@@ -5118,6 +5232,11 @@
                       "name": "DialogueBubblePos",
                       "x": 100,
                       "y": 36
+                    },
+                    {
+                      "name": "Hat",
+                      "x": 88,
+                      "y": 53.5
                     }
                   ],
                   "originPoint": {
@@ -5160,6 +5279,11 @@
                       "name": "DialogueBubblePos",
                       "x": 100,
                       "y": 36
+                    },
+                    {
+                      "name": "Hat",
+                      "x": 88,
+                      "y": 53.5
                     }
                   ],
                   "originPoint": {
@@ -5395,6 +5519,210 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Hat",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "hatless",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hats\\no_hat.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 30,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 60
+                      },
+                      {
+                        "x": 30,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hat_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hats\\hat_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 30,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 60
+                      },
+                      {
+                        "x": 30,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hat_2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hats\\hat_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 30,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 60
+                      },
+                      {
+                        "x": 30,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hat_3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hats\\hat_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 30,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 60
+                      },
+                      {
+                        "x": 30,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -5420,6 +5748,14 @@
         "folderName": "Kinito",
         "children": [
           {
+            "folderName": "Hats",
+            "children": [
+              {
+                "objectName": "Hat"
+              }
+            ]
+          },
+          {
             "objectName": "Kinito"
           }
         ]
@@ -5437,8 +5773,13 @@
       "children": [
         {
           "name": "Dialogue",
-          "type": "structure",
-          "children": []
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Hat",
+          "type": "string",
+          "value": ""
         },
         {
           "name": "Intro",
@@ -5448,6 +5789,18 @@
         {
           "folded": true,
           "name": "JokeProbability",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Paint",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Saturation",
           "type": "number",
           "value": 0
         }
@@ -5528,7 +5881,12 @@
       "referenceTo": "/layouts/menu"
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/hats"
+    }
+  ],
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

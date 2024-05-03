@@ -5558,6 +5558,30 @@
       "actions": [
         {
           "type": {
+            "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+          },
+          "parameters": [
+            "Kinito",
+            "Effect",
+            "\"Paint\"",
+            "\"hue\"",
+            "GlobalVariable(Kinito.Paint)"
+          ]
+        },
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+          },
+          "parameters": [
+            "Kinito",
+            "Effect",
+            "\"Paint\"",
+            "\"saturation\"",
+            "GlobalVariable(Kinito.Saturation)"
+          ]
+        },
+        {
+          "type": {
             "value": "AdvancedWindow::SetClosable"
           },
           "parameters": [
@@ -5704,6 +5728,13 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Hats"
     }
   ],
   "layers": [

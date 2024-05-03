@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5845654585046708,
+    "zoomFactor": 0.6374731527483553,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -58,7 +58,12 @@
       "x": 149,
       "y": 24,
       "zOrder": -1,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
       "initialVariables": []
     },
@@ -72,9 +77,9 @@
       "name": "KinitoActButton",
       "persistentUuid": "daa3195f-3754-4715-bd20-1d00596ca997",
       "width": 59,
-      "x": 359,
-      "y": 139,
-      "zOrder": -1,
+      "x": 354,
+      "y": 142,
+      "zOrder": -2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": [
@@ -99,6 +104,262 @@
       "x": -106,
       "y": -157,
       "zOrder": -2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 43,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KinitoPaintButton",
+      "persistentUuid": "5a0df86d-b39c-431d-a903-1fd547477bb9",
+      "width": 32,
+      "x": 366,
+      "y": 155,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "PaintValue",
+          "type": "number",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 43,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KinitoPaintButton",
+      "persistentUuid": "39f09df1-24d6-4740-800a-797f66a1682b",
+      "width": 32,
+      "x": 437,
+      "y": 155,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "PaintValue",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 43,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KinitoPaintButton",
+      "persistentUuid": "8e37e89c-2e2b-481f-8215-654ddf57b884",
+      "width": 32,
+      "x": 511,
+      "y": 154,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "PaintValue",
+          "type": "number",
+          "value": 94
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 43,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KinitoPaintButton",
+      "persistentUuid": "5f9c933a-cf3c-4572-9ad9-e52f450eaf1b",
+      "width": 32,
+      "x": 363,
+      "y": 233,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "PaintValue",
+          "type": "number",
+          "value": -170
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 43,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KinitoPaintButton",
+      "persistentUuid": "6214dbfe-ed1e-420d-bff9-be0bd16f8560",
+      "width": 32,
+      "x": 435,
+      "y": 232,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "PaintValue",
+          "type": "number",
+          "value": -105
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 43,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KinitoPaintButton",
+      "persistentUuid": "37e277eb-d290-4271-933f-34c7b4a60bb4",
+      "width": 32,
+      "x": 510,
+      "y": 230,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "SaturationValue",
+          "type": "number",
+          "value": -1
+        },
+        {
+          "folded": true,
+          "name": "PaintValue",
+          "persistentUuid": "1309ce6f-16b0-4002-b310-be318027d738",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 17,
+      "keepRatio": true,
+      "layer": "",
+      "name": "MenuButton",
+      "persistentUuid": "1799f4df-c3b3-4c1c-9b52-3b99ef0c4521",
+      "width": 134,
+      "x": 160,
+      "y": 283,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "Animation",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 17,
+      "keepRatio": true,
+      "layer": "",
+      "name": "MenuButton",
+      "persistentUuid": "bd49f3b2-94fd-4128-b1cc-367746be46a2",
+      "width": 134,
+      "x": 160,
+      "y": 169,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 8,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KinitoArrowButton",
+      "persistentUuid": "5e749b25-d124-42ff-96b4-5e99fb91abd0",
+      "width": 8,
+      "x": 582,
+      "y": 219,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "SelectedHat",
+          "type": "number",
+          "value": -1
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 8,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KinitoArrowButton",
+      "persistentUuid": "9423f590-6ea3-432e-8cdf-b8c9a0d5f89c",
+      "width": 8,
+      "x": 656,
+      "y": 219,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "SelectedHat",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "HatPreview",
+      "persistentUuid": "5d455026-28fa-4c59-b1a9-b0ba29f38c5c",
+      "width": 0,
+      "x": 576,
+      "y": 178,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -230,7 +491,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "menu",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -240,6 +501,54 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "kinito_world.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 556,
+                        "y": 0
+                      },
+                      {
+                        "x": 556,
+                        "y": 24
+                      },
+                      {
+                        "x": 0,
+                        "y": 24
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "customize",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "kinito_customize.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -346,6 +655,420 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "KinitoPaintButton",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "PaintValue",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "SaturationValue",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Collision",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Collision",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "MenuButton",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "Animation",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Collision",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Collision",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "KinitoArrowButton",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "SelectedHat",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Collision",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Collision",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "HatPreview",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "hatless",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hats\\no_hat.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 30,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 60
+                      },
+                      {
+                        "x": 30,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hat_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hats\\hat_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 30,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 60
+                      },
+                      {
+                        "x": 30,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hat_2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hats\\hat_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 30,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 60
+                      },
+                      {
+                        "x": 30,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hat_3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hats\\hat_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 30,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 60
+                      },
+                      {
+                        "x": 30,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -362,6 +1085,18 @@
       },
       {
         "objectName": "KinitoActButton"
+      },
+      {
+        "objectName": "KinitoPaintButton"
+      },
+      {
+        "objectName": "MenuButton"
+      },
+      {
+        "objectName": "KinitoArrowButton"
+      },
+      {
+        "objectName": "HatPreview"
       }
     ]
   },
@@ -5135,6 +5870,62 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "name": "Menu Buttons",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "MenuButton",
+                    "",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "Kinito",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "KinitoWORLD",
+                    "Animation",
+                    "=",
+                    "MenuButton.Animation"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "name": "Buttons",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5176,6 +5967,17 @@
                 },
                 {
                   "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "KinitoWORLD",
+                    "Animation",
+                    "=",
+                    "\"menu\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "MouseButtonPressed"
                   },
                   "parameters": [
@@ -5199,6 +6001,166 @@
                     "Kinito.Dialogue",
                     "=",
                     "KinitoActButton.KinitoDialogue"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "KinitoPaintButton",
+                    "",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "KinitoWORLD",
+                    "Animation",
+                    "=",
+                    "\"customize\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "Kinito",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Kinito.Paint",
+                    "=",
+                    "KinitoPaintButton.PaintValue"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Kinito.Saturation",
+                    "=",
+                    "KinitoPaintButton.SaturationValue"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "splatter.wav",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"KinitoValues\"",
+                    "\"Paint\"",
+                    "ToString(GlobalVariable(Kinito.Paint))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"KinitoValues\"",
+                    "\"Saturation\"",
+                    "ToString(GlobalVariable(Kinito.Saturation))"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "KinitoArrowButton",
+                    "",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "KinitoWORLD",
+                    "Animation",
+                    "=",
+                    "\"customize\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "Kinito",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Kinito.Hat",
+                    "+",
+                    "KinitoArrowButton.SelectedHat"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"KinitoValues\"",
+                    "\"Hat\"",
+                    "ToString(GlobalVariable(Kinito.Hat))"
                   ]
                 }
               ]
@@ -5289,6 +6251,47 @@
       "actions": [
         {
           "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "HatPreview",
+            "Animation",
+            "=",
+            "GlobalVariable(Kinito.Hat)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+          },
+          "parameters": [
+            "Kinito",
+            "Effect",
+            "\"Paint\"",
+            "\"hue\"",
+            "GlobalVariable(Kinito.Paint)"
+          ]
+        },
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+          },
+          "parameters": [
+            "Kinito",
+            "Effect",
+            "\"Paint\"",
+            "\"saturation\"",
+            "GlobalVariable(Kinito.Saturation)"
+          ]
+        },
+        {
+          "type": {
             "value": "AdvancedWindow::SetClosable"
           },
           "parameters": [
@@ -5339,7 +6342,85 @@
             "value": "Cache"
           },
           "parameters": [
+            "MenuButton"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "KinitoPaintButton"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
             "KinitoActButton"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "KinitoArrowButton"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "AnimatableCapability::AnimatableBehavior::Name"
+          },
+          "parameters": [
+            "KinitoWORLD",
+            "Animation",
+            "=",
+            "\"customize\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "HatPreview"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::Name"
+          },
+          "parameters": [
+            "KinitoWORLD",
+            "Animation",
+            "=",
+            "\"customize\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "HatPreview",
+            ""
           ]
         }
       ]
@@ -5425,6 +6506,13 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Hats"
     }
   ],
   "layers": [

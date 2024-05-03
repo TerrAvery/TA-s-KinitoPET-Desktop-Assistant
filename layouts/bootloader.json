@@ -28,6 +28,24 @@
       "name": "IntroDone",
       "type": "string",
       "value": "0"
+    },
+    {
+      "folded": true,
+      "name": "KinitoPaintColor",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "KinitoSaturation",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "KinitoHat",
+      "type": "string",
+      "value": ""
     }
   ],
   "instances": [
@@ -184,6 +202,130 @@
             "\"CompletedIntro\"",
             "=",
             "IntroDone"
+          ]
+        },
+        {
+          "type": {
+            "value": "LireFichierTxt"
+          },
+          "parameters": [
+            "\"KinitoValues\"",
+            "\"Paint\"",
+            "=",
+            "KinitoPaintColor"
+          ]
+        },
+        {
+          "type": {
+            "value": "LireFichierTxt"
+          },
+          "parameters": [
+            "\"KinitoValues\"",
+            "\"Saturation\"",
+            "=",
+            "KinitoSaturation"
+          ]
+        },
+        {
+          "type": {
+            "value": "LireFichierTxt"
+          },
+          "parameters": [
+            "\"KinitoValues\"",
+            "\"Hat\"",
+            "=",
+            "KinitoHat"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarSceneTxt"
+          },
+          "parameters": [
+            "KinitoPaintColor",
+            "!=",
+            "\"0\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "Kinito.Paint",
+            "=",
+            "KinitoPaintColor"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "Kinito.Saturation",
+            "=",
+            "KinitoSaturation"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarSceneTxt"
+          },
+          "parameters": [
+            "KinitoHat",
+            "!=",
+            "\"0\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "Kinito.Hat",
+            "=",
+            "KinitoHat"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarSceneTxt"
+          },
+          "parameters": [
+            "KinitoSaturation",
+            "!=",
+            "\"0\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "Kinito.Saturation",
+            "=",
+            "KinitoSaturation"
           ]
         }
       ]
